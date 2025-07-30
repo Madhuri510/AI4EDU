@@ -1,0 +1,33 @@
+# Streamlit for UI
+streamlit>=1.33.0
+
+# Azure SDKs for Blob Storage
+azure-storage-blob>=12.19.0
+
+# Python-dotenv to load .env
+python-dotenv>=1.0.1
+
+# PyYAML to parse YAML agent configs
+PyYAML>=6.0
+
+# PyPDF2 for PDF text extraction
+PyPDF2>=3.0.1
+
+# python-docx for DOCX parsing
+python-docx>=1.1.0
+
+# crewAI core agent framework
+crewai>=0.28.7  # use latest stable
+
+# LiteLLM (used indirectly by CrewAI for LLM interaction)
+litellm>=1.27.13
+
+# langchain-openai (used if using AzureChatOpenAI elsewhere)
+langchain-openai>=0.1.8
+
+# OpenAI SDK (only needed if debugging or manually using OpenAI directly)
+openai>=1.30.1
+
+
+fpdf
+requests
