@@ -97,33 +97,7 @@ from datetime import datetime, timezone
 from utils.agentic_workflow import generate_case_from_blob
 from utils.azure_blob_utils import upload_to_blob, upload_text_to_blob
 
-# app.py
-import os
-import streamlit.web.bootstrap
-from fastapi import FastAPI
-from fastapi.responses import PlainTextResponse
-from fastapi.middleware.wsgi import WSGIMiddleware
-import streamlit.web.server
 
-# Step 1: Define FastAPI app
-api = FastAPI()
-
-@api.get("/robots.txt", response_class=PlainTextResponse)
-def robots_txt():
-    return "User-agent: *\nDisallow: /"
-
-# Step 2: Wrap Streamlit as WSGI app
-def create_app():
-    return streamlit.web.server.Server.get_current()._app
-
-# Step 3: Combine both
-app = WSGIMiddleware(create_app())
-api.mount("/", app)
-
-# Step 4: When running locally
-if __name__ == "__main__":
-    import uvicorn
-    uvicorn.run(api, host="0.0.0.0", port=int(os.environ.get("PORT", 8501)))
 
 
 
