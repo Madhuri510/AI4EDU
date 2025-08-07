@@ -98,6 +98,7 @@ from utils.agentic_workflow import generate_case_from_blob
 from utils.azure_blob_utils import upload_to_blob, upload_text_to_blob
 
 
+st.markdown("<meta name='robots' content='noindex'>", unsafe_allow_html=True)
 
 
 st.set_page_config(page_title="Agentic Case Generator", layout="wide")
