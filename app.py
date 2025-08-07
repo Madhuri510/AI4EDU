@@ -97,21 +97,6 @@ from datetime import datetime, timezone
 from utils.agentic_workflow import generate_case_from_blob
 from utils.azure_blob_utils import upload_to_blob, upload_text_to_blob
 
-import streamlit as st
-from fastapi import FastAPI
-from starlette.responses import Response
-from streamlit.web.server import Server
-
-# Create FastAPI app to handle custom route
-app = FastAPI()
-
-@app.get("/robots.txt")
-def robots():
-    content = "User-agent: *\nDisallow: /"
-    return Response(content, media_type="text/plain")
-
-# Patch Streamlit to use FastAPI
-Server.get_app = lambda _: app
 
 
 
