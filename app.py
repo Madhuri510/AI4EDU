@@ -1,15 +1,6 @@
-import streamlit as st
-
-st.markdown(
-    """
-    <meta name="robots" content="noindex, nofollow">
-    """,
-    unsafe_allow_html=True
-)
-
 # # 
 
-#  
+
 # import streamlit as st
 # import os
 # import asyncio
@@ -105,8 +96,6 @@ import requests
 from datetime import datetime, timezone
 from utils.agentic_workflow import generate_case_from_blob
 from utils.azure_blob_utils import upload_to_blob, upload_text_to_blob
-
-
 
 st.set_page_config(page_title="Agentic Case Generator", layout="wide")
 st.title("📄 Agentic AI Case Builder")
