@@ -1,12 +1,3 @@
-import streamlit as st
-
-st.markdown(
-    """
-    <meta name="robots" content="noindex, nofollow">
-    """,
-    unsafe_allow_html=True
-)
-
 # # 
  
 #  
