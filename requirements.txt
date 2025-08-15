@@ -17,7 +17,7 @@ PyPDF2>=3.0.1
 python-docx>=1.1.0
 
 # crewAI core agent framework
-crewai>=0.28.7  # use latest stable
+#crewai>=0.28.7  # use latest stable
 
 # LiteLLM (used indirectly by CrewAI for LLM interaction)
 litellm>=1.27.13
@@ -36,5 +36,6 @@ fastapi
 fpdf
 
 requests
+
 
 
