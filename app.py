@@ -1,6 +1,15 @@
+import streamlit as st
+
+st.markdown(
+    """
+    <meta name="robots" content="noindex, nofollow">
+    """,
+    unsafe_allow_html=True
+)
+
 # # 
 
- 
+#  
 # import streamlit as st
 # import os
 # import asyncio
@@ -97,6 +106,8 @@ from datetime import datetime, timezone
 from utils.agentic_workflow import generate_case_from_blob
 from utils.azure_blob_utils import upload_to_blob, upload_text_to_blob
 
+
+
 st.set_page_config(page_title="Agentic Case Generator", layout="wide")
 st.title("📄 Agentic AI Case Builder")
 st.markdown("---")
@@ -171,4 +182,3 @@ if st.session_state.generated_case:
                 st.warning(f"⚠️ Failed to send to Teams (Status {response.status_code})")
         except Exception as e:
             st.error(f"❌ Error sending to Teams: {e}")
-
