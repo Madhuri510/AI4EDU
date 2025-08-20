@@ -28,7 +28,8 @@ langchain-openai>=0.1.8
 # OpenAI SDK (only needed if debugging or manually using OpenAI directly)
 openai>=1.30.1
 
-
+requests
+python-dotenv
 
 fastapi
 
@@ -36,6 +37,7 @@ fastapi
 fpdf
 
 requests
+
 
 
 
